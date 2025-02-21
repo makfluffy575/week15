@@ -21,11 +21,19 @@ for (let i=0; i<numbers.length; i+=1)
   
 }
 
-  //сортировка в порядке убывания
-  // numbers.reverse();
-  numbers.sort((a, b) => b-a);
+//вывод чисел в порядке убывания
+const numbersReverse = [];
+for (let i = (numbers.length -1); i>=0; i--) {
+  numbersReverse.push(numbers[i]);
+}
+console.log(numbersReverse);
 
-console.log(numbers);
+
+//вывод чисел в порядке убывания без цикла
+// numbers.reverse();
+// numbers.sort((a, b) => b-a);
+
+
 
 
 
